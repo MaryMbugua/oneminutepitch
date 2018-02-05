@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+<!-- STYLES BLOCK -->
+{% block styles %}
+{{ super() }}
+<link rel="stylesheet" href="{{url_for('static',filename='css/pickup.css')}}"></link>
+
+{% endblock %}
+
+{% block content %}
+
+    <div class="container">
+        <h1>
+            call thought pitches here!
+        </h1>
+
+    </div>
+
+
+
+
+{% endblock %}

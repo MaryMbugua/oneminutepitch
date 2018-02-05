@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+<!-- STYLES BLOCK -->
+{% block styles %}
+{{ super() }}
+<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}"></link>
+
+{% endblock %}
+
+{% block content %}
+        <div class="container">
+            <h1>
+                INDEX PAGE STUFF HERE
+            </h1>
+        </div>
+
+        <div class="container">
+            <a href="/newpitch">
+                Write a new Pitch
+            </a>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 col-md-3">
+                        <button type="button" class="btn btn-colour btn-lg"><a href="/pickup">pickup</a></button>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                        <button type="button" class="btn btn-colour btn-lg"><a href="/interview">interview</a></button></div>
+
+                <div class="col-xs-6 col-md-3"><button type="button" class="btn btn-colour btn-lg"><a href="/thought">thoughful</a></button></div>
+
+                <div class="col-xs-6 col-md-3"><button type="button" class="btn btn-colour btn-lg"><a href="/adventure">adventure</a></button></div>
+
+
+
+            </div>
+
+        </div>
+
+
+
+
+{% endblock %}
